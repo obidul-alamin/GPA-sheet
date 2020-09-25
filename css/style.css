@@ -1,0 +1,20 @@
+.GPA{
+	padding: 200px;
+    background: #efef09;
+}
+.label{
+	font-size: 30px;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 700;
+}
+.form-control {
+    background-color: #15d031;
+    border: 5px solid #0a80f7;
+}
+p{
+	font-size: 25px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+}

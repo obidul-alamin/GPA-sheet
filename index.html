@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GPA-Sheet</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+	<div class="GPA">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-8">
+					
+					<label for="demo" class="label">Obtained Mark :</label>
+					<textarea placeholder="type here" id="word" class="form-control" onkeyup="GPA()"></textarea>
+					<p id="display"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script>
+		
+		  document.getElementById("display").innerHTML= "Your Marks Should be in between 0 to 100";
+
+		var aplus = "A+";
+		var a = "A";
+		var minus = "A-";
+		var b = "B";
+		var c = "C";
+		var d = "D";
+		var f = "F";
+
+
+		function GPA(){
+			    var ee = document.getElementById("word").value;
+
+			    if (ee>= 80){
+				document.getElementById("display").innerHTML = aplus;
+                }
+                else if (ee>= 70){
+                   document.getElementById("display").innerHTML = a;	
+                }
+                else if (ee>= 60){
+                	document.getElementById("display").innerHTML = minus;	
+                }
+                else if (ee>= 50){
+                	document.getElementById("display").innerHTML = b;
+                }
+                else if (ee>= 40){
+                	document.getElementById("display").innerHTML = c;
+                }
+                else if (ee>= 33){
+                	document.getElementById("display").innerHTML = d;
+                }
+                else {
+                	document.getElementById("display").innerHTML = f;
+                }
+
+	      }
+
+     </script>
+
+   </body>
+   </html>
+
+
